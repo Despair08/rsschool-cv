@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:regular,500,600,700&display=swap);
+
 /*Обнуление*/
 * {
   padding: 0;
@@ -31,9 +33,11 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-family: "Lora";
+  font-weight: 400;
   font-size: 100%;
   line-height: 1;
-  font-size: 14px;
+  font-size: 16px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -77,4 +81,225 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
-/*--------------------*/
+/*--------------------технические стили-------------------------*/
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #272838;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container,
+[class*="_container"] {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* ------------------header стили------------------------------ */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #272838;
+  z-index: 2;
+}
+
+.header__body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.header__logo {
+  font-weight: 600;
+  font-size: 48px;
+  color: #fefadc;
+  position: relative;
+  z-index: 3;
+}
+
+.header__logo:hover {
+  color: #ff5400;
+}
+
+.header__logo span {
+  color: #ff5400;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__list {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+.header__item {
+  margin: 0 0 0 20px;
+}
+.header__link {
+  position: relative;
+  color: #fefadc;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.header__link:hover,
+.header__link.active {
+  color: #d7816a;
+}
+
+.header__link:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px; /* Высота линии */
+  background-color: #ff5400; /* Цвет подчеркивания при исчезании линии*/
+  transition: width 0.5s; /* Время эффекта */
+}
+
+.header__link:hover:after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px; /* Высота линии */
+  background-color: #d7816a; /* Цвет подчеркивания при появлении линии*/
+  transition: width 0.5s; /* Время эффекта */
+}
+
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .header__burger span {
+    position: absolute;
+    background-color: #fefadc;
+    left: 0;
+    top: 9px;
+    width: 100%;
+    height: 3px;
+  }
+
+  .header__burger:before,
+  .header__burger:after {
+    content: "";
+    background-color: #fefadc;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger:before {
+    top: 0;
+  }
+
+  .header__burger:after {
+    bottom: 0;
+  }
+
+  .header__burger-selected:before {
+    transform: rotate(45deg);
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger-selected:after {
+    transform: rotate(-45deg);
+    bottom: 8px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger-selected span {
+    transform: scale(0);
+  }
+
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #829191;
+    overflow: auto;
+    padding: 70px 10px 20px 10px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__menu-selected {
+    top: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__body {
+    height: 50px;
+  }
+  .header__list {
+    display: block;
+  }
+
+  .header__item {
+    margin: 0 0 20px 0;
+  }
+
+  .header__link {
+    font-size: 24px;
+  }
+}
+
+/* ----------------------------main стили---------------------- */
+
+.main {
+  flex: 1 1 auto;
+}
+
+.main div {
+  padding: 100px 10px;
+}
+
+@media (max-width: 768px) {
+  .main div {
+    padding: 70px 10px;
+  }
+}
