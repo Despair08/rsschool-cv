@@ -1,12 +1,21 @@
 let burger = document.querySelector(".header__burger"),
   menu = document.querySelector(".header__menu"),
-  body = document.querySelector("body");
+  body = document.querySelector("body"),
+  items = document.querySelectorAll(".header__link");
 
 burger.addEventListener("click", function () {
   burger.classList.toggle("header__burger-selected");
   menu.classList.toggle("header__menu-selected");
   body.classList.toggle("lock");
 });
+
+for (let item of items) {
+  item.addEventListener("click", function () {
+    burger.classList.remove("header__burger-selected");
+    menu.classList.remove("header__menu-selected");
+    body.classList.remove("lock");
+  });
+}
 
 const letters = [
   "  function typeText() {\n",
