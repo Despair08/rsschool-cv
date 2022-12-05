@@ -1,11 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Lora:regular,600,700&display=swap);
 
-/*Обнуление*/
+
+/* Обнуление */
+/* ========================================= */
+
 * {
   padding: 0;
   margin: 0;
   border: 0;
 }
+
 *,
 *:before,
 *:after {
@@ -13,6 +17,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 :focus,
 :active {
   outline: none;
@@ -42,6 +47,7 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 input,
 button,
 textarea {
@@ -81,6 +87,10 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
+/* ========================================== */
+/* Конец обнуления */
+
 /*--------------------технические стили-------------------------*/
 html,
 body {
