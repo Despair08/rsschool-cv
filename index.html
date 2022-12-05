@@ -4,7 +4,209 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>CV</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <a href="#" class="header__logo"
+              ><span>D</span>an <span>Vo</span></a
+            >
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a href="#about" class="header__link">About</a>
+                </li>
+                <li class="header__item">
+                  <a href="#skills" class="header__link">Skills</a>
+                </li>
+                <li class="header__item">
+                  <a href="#projects" class="header__link">Pet-Projects</a>
+                </li>
+                <li class="header__item">
+                  <a href="#contacts" class="header__link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main" id="about">
+        <div class="main__container">
+          <div class="main__hello">
+            <h1 class="hello__title">Danila Voronchikhin</h1>
+            <h2 class="hello__subtitle">Frontend Developer</h2>
+            <p class="hello__description">
+              Currently on the site instead of content stubs. In the future, I
+              will replace them with a photo and normal text.
+            </p>
+          </div>
+          <div class="main__banner">
+            <div class="banner__boxcode">
+              <pre class="code"></pre>
+            </div>
+            <div class="banner__photo"></div>
+          </div>
+        </div>
+        <div class="about">
+          <div class="about__container">
+            <img src="./img/logo/my_logo.svg" alt="Logo" class="logo__image" />
+            <p class="about__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              maiores nostrum laboriosam cumque magnam nihil fuga voluptatibus
+              est magni aspernatur dignissimos qui perspiciatis excepturi,
+              reiciendis at sint, eligendi voluptatum quas error?
+            </p>
+          </div>
+        </div>
+        <section class="skills" id="skills">
+          <div class="skills__container">
+            <h2 class="skills__title">Skills</h2>
+            <div class="skills__cards">
+              <figure class="skill__card">
+                <img src="./img/logo/html.png" alt="HTML" class="card__logo" />
+                <figcaption class="card__title">html</figcaption>
+              </figure>
+              <figure class="skill__card">
+                <img src="./img/logo/css.png" alt="CSS" class="card__logo" />
+                <figcaption class="card__title">css</figcaption>
+              </figure>
+              <figure class="skill__card">
+                <img src="./img/logo/js.png" alt="JS" class="card__logo" />
+                <figcaption class="card__title">js</figcaption>
+              </figure>
+              <figure class="skill__card">
+                <img src="./img/logo/git.png" alt="GIT" class="card__logo" />
+                <figcaption class="card__title">git</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio" id="projects">
+          <div class="portfolio__container">
+            <h2 class="portfolio__title">My Projects</h2>
+            <div class="portfolio__cards">
+              <div class="portfolio__card">
+                <div class="card__overlay">
+                  <h3 class="card__title">Project</h3>
+                  <p class="card__description">Another amazing project</p>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="card__link"
+                  >
+                    <span>See more →</span>
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio__card">
+                <div class="card__overlay">
+                  <h3 class="card__title">Project</h3>
+                  <p class="card__description">Another amazing project</p>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="card__link"
+                  >
+                    <span>See more →</span>
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio__card">
+                <div class="card__overlay">
+                  <h3 class="card__title">Project</h3>
+                  <p class="card__description">Another amazing project</p>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="card__link"
+                  >
+                    <span>See more →</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="contacts">
+        <div class="footer__container">
+          <h3 class="footer__title">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus,
+            dolore.
+          </h3>
+          <div class="footer__contacts">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <img
+                  src="./img/logo/rs_school_js.svg"
+                  alt="rsSchool logo"
+                  class="contacts__logo-size"
+                />
+                <a
+                  href="https://rs.school/js/"
+                  target="_blank"
+                  class="contacts__link"
+                >
+                  rsSchool JS course
+                </a>
+              </li>
+              <li class="contacts__item">
+                <img
+                  src="./img/Icons/github.svg"
+                  alt="GitHub Logo"
+                  class="contacts__logo"
+                />
+                <a
+                  href="https://github.com/Despair08"
+                  target="_blank"
+                  class="contacts__link"
+                >
+                  GitHub
+                </a>
+              </li>
+              <li class="contacts__item">
+                <img
+                  src="./img/Icons/mail.svg"
+                  alt="mail logo"
+                  class="contacts__logo"
+                />
+                <a
+                  href="vodanila2008@ya.ru"
+                  target="_blank"
+                  class="contacts__link"
+                >
+                  vodanila2008@ya.ru
+                </a>
+              </li>
+              <li class="contacts__item">
+                <img
+                  src="./img/Icons/telegram.svg"
+                  alt="telegram logo"
+                  class="contacts__logo"
+                />
+                <a
+                  href="https://t.me/Des_pair"
+                  target="_blank"
+                  class="contacts__link"
+                >
+                  @Des_pair
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
 </html>
