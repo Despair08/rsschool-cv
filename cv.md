@@ -23,3 +23,4 @@ I want to complete my studies at RS-School and get a job as a junior developer. 
 
 
 ---  
+[RS School](https://rs.school/)
