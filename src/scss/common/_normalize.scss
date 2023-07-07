@@ -10,6 +10,8 @@ img {
 
 body {
   @include font();
+  color: $secondary-light;
+  background-color: $primary-bg;
 }
 
 h1 {
@@ -21,6 +23,10 @@ h2 {
 }
 
 h3 {
+  @include font(24px, 400, normal, left);
+}
+
+h4 {
   @include font(16px, 400, normal, left);
 }
 
@@ -28,4 +34,12 @@ button {
   border: none;
   background-color: transparent;
   box-shadow: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
