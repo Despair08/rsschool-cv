@@ -1,0 +1,27 @@
+.button {
+  padding: 17px 24px;
+  cursor: pointer;
+  @extend %transition;
+  &:hover {
+    @extend %transition;
+  }
+}
+
+.button--prime {
+  border-radius: 17px;
+  border: 1px solid $secondary-acc;
+  &:hover {
+    background-color: $secondary-acc;
+  }
+}
+
+.button--card {
+  border-radius: 14px;
+  background-color: $card-btn;
+  color: $secondary-light;
+  @include font();
+
+  &:hover {
+    background-color: $secondary;
+  }
+}

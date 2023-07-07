@@ -8,6 +8,24 @@ img {
   display: block;
 }
 
-body{
+body {
+  @include font();
+}
 
+h1 {
+  @include font(62px, 400, normal, left);
+}
+
+h2 {
+  @include font(32px, 400, normal, left);
+}
+
+h3 {
+  @include font(16px, 400, normal, left);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
 }
