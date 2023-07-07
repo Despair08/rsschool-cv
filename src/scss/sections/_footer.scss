@@ -1,0 +1,33 @@
+.footer {
+  max-height: 128px;
+  padding: 24px 0 80px 0;
+  border-top: 1px solid $accent-mix;
+  text-align: center;
+  color: $secondary;
+  &__nav {
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  &__item {
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    @extend %transition;
+    &:hover {
+      @extend %transition;
+      color: $secondary-light;
+    }
+  }
+  &__img {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+  }
+  &__copy {
+    padding-top: 20px;
+  }
+}

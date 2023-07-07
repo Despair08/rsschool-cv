@@ -8,10 +8,15 @@ img {
   display: block;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   @include font();
   color: $secondary-light;
-  background-color: $primary-bg;
+  background-color: $primary;
 }
 
 h1 {
@@ -42,4 +47,5 @@ li {
 
 a {
   text-decoration: none;
+  color: inherit;
 }

@@ -23,14 +23,14 @@
   &__link {
     display: block;
     padding: 24px 24px;
-    color: $secondary-semi;
+    color: $secondary;
     @extend %transition;
     &:hover {
       @extend %transition;
-      color: $secondary-light;
+      color: $secondary;
     }
     &--active {
-      color: $secondary-light;
+      color: $secondary;
     }
   }
 }
