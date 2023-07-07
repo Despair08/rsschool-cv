@@ -1,3 +1,28 @@
 .main {
   flex-grow: 1;
+  padding-top: 160px;
+  background: url("./assets/images/main/cloud--little.png") no-repeat 60% 80%,
+    url("./assets/images/main/main_bg.png") no-repeat 75% 130%,
+    url("./assets/images/main/cloud.png") no-repeat 100% -20%, url("./assets/images/main/land.png") no-repeat 0% 100%;
+  &__subtitle {
+    padding-bottom: 30px;
+    color: $accent-light;
+  }
+
+  &__descr {
+    color: $secondary;
+  }
+
+  &__snipp {
+    padding-top: 15px;
+  }
+}
+.snipp {
+  &__var {
+    color: $secondary-acc;
+  }
+
+  &__accent {
+    color: $accent-skin;
+  }
 }
