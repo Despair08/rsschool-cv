@@ -1,4 +1,5 @@
 .button {
+  display: inline-block;
   padding: 17px 24px;
   cursor: pointer;
   @extend %transition;
@@ -16,10 +17,11 @@
 }
 
 .button--card {
+  margin-left: 10px;
   border-radius: 14px;
   background-color: $card-btn;
   color: $secondary-light;
-  @include font();
+  @include font(18px, 400, normal, center);
 
   &:hover {
     background-color: $secondary;

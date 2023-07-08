@@ -13,7 +13,7 @@
   <div class="wrapper">
     <header class="header">
       <h3 class="header__title">
-        &ltvodanila /&gt
+        &lt;vodanila /&gt;
       </h3>
       <nav class="header__nav">
         <ul class="nav__list">
@@ -34,8 +34,72 @@
       </nav>
     </header>
     <main class="projects__main">
-      <section class="container">
-
+      <section class="content__container content__projects">
+        <pre class="code__snipp code__snipp--top">
+          createDomNode(node, element, ...classes){
+            node = document.createElement(element);
+            node.classList.add(...classes);
+            return node;
+          }
+        </pre>
+        <div class="content__cards">
+          <div class="card__wrapper">
+            <h4 class="card__label">
+              <span class="accent">ShiftOn</span> //Landing for time-management
+            </h4>
+            <div class="card">
+              <img class="card__img" src="../assets/images/projects/cards/shifton.png" alt="project preview">
+              <div class="descr__container">
+                <ul class="card__descr">
+                  <li class="descr__list">Adaptive, HTML, SCSS, JS</li>
+                  <li class="descr__list"><a href="https://github.com/Despair08/shift" class="descr__link">GitHub</a>
+                  </li>
+                  </p>
+                </ul>
+                <a class="button button--card" href="https://despair08.github.io/shift/" target="_blank">learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="card__wrapper">
+            <h4 class="card__label">
+              <span class="accent">RunSmart</span> //Landing
+            </h4>
+            <div class="card">
+              <img class="card__img" src="../assets/images/projects/cards/pulse.png" alt="project preview">
+              <div class="descr__container">
+                <ul class="card__descr">
+                  <li class="descr__list">No Adaptive, Custom Slider, HTML, SCSS, JS</li>
+                  <li class="descr__list"><a href="https://github.com/Despair08/pulse" class="descr__link">GitHub</a>
+                  </li>
+                  </p>
+                </ul>
+                <a class="button button--card" href="https://despair08.github.io/pulse/" target="_blank">learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="card__wrapper">
+            <h4 class="card__label">
+              <span class="accent">Project</span> //In progress
+            </h4>
+            <div class="card">
+              <img class="card__img" src="../assets/images/projects/cards/temp.png" alt="project preview">
+              <div class="descr__container">
+                <ul class="card__descr">
+                  <li class="descr__list">In progress</li>
+                  <li class="descr__list"><a href="#" class="descr__link">GitHub</a></li>
+                  </p>
+                </ul>
+                <a class="button button--card" href="#" target="_blank">learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre class="code__snipp code__snipp--bottom-r">
+          bindEvents(){
+          this.modalCloseBtn.addEventListener('click', this.closeModal);
+          this.overlay.addEventListener('click', this.closeModal);
+          }
+          </pre>
       </section>
     </main>
     <footer class="footer">
