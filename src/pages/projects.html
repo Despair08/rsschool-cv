@@ -36,11 +36,13 @@
     <main class="projects__main">
       <section class="content__container content__projects">
         <pre class="code__snipp code__snipp--top">
-          createDomNode(node, element, ...classes){
-            node = document.createElement(element);
-            node.classList.add(...classes);
-            return node;
-          }
+          <code>
+            createDomNode(node, element, ...classes){
+              node = document.createElement(element);
+              node.classList.add(...classes);
+              return node;
+            }
+          </code>
         </pre>
         <div class="content__cards">
           <div class="card__wrapper">
@@ -95,10 +97,12 @@
           </div>
         </div>
         <pre class="code__snipp code__snipp--bottom-r">
-          bindEvents(){
-          this.modalCloseBtn.addEventListener('click', this.closeModal);
-          this.overlay.addEventListener('click', this.closeModal);
-          }
+          <code>
+            bindEvents(){
+            this.modalCloseBtn.addEventListener('click', this.closeModal);
+            this.overlay.addEventListener('click', this.closeModal);
+            }
+          </code>
           </pre>
       </section>
     </main>
