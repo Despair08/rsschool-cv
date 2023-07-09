@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <title>CV by vodanila</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h3 class="header__title">
+        &lt;vodanila /&gt;
+      </h3>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="../index.html">_Hello</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="#">_projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="./about_me.html">_about-me</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="./contact_me.html">_contact-me</a>
+          </li>
+
+        </ul>
+      </nav>
+    </header>
+    <main class="projects__main">
+      <section class="content__container content__projects">
+        <pre class="code__snipp code__snipp--top">
+          <code>
+            createDomNode(node, element, ...classes){
+              node = document.createElement(element);
+              node.classList.add(...classes);
+              return node;
+            }
+          </code>
+        </pre>
+        <div class="content__cards">
+          <div class="card__wrapper">
+            <h4 class="card__label">
+              <span class="accent">ShiftOn</span> //Landing for time-management
+            </h4>
+            <div class="card">
+              <img class="card__img" src="../assets/images/projects/cards/shifton.png" alt="project preview">
+              <div class="descr__container">
+                <ul class="card__descr">
+                  <li class="descr__list">Adaptive, HTML, SCSS, JS</li>
+                  <li class="descr__list"><a href="https://github.com/Despair08/shift" class="descr__link">GitHub</a>
+                  </li>
+                </ul>
+                <a class="button button--card" href="https://despair08.github.io/shift/" target="_blank">learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="card__wrapper">
+            <h4 class="card__label">
+              <span class="accent">RunSmart</span> //Landing
+            </h4>
+            <div class="card">
+              <img class="card__img" src="../assets/images/projects/cards/pulse.png" alt="project preview">
+              <div class="descr__container">
+                <ul class="card__descr">
+                  <li class="descr__list">No Adaptive, Custom Slider, HTML, SCSS, JS</li>
+                  <li class="descr__list"><a href="https://github.com/Despair08/pulse" class="descr__link">GitHub</a>
+                  </li>
+                </ul>
+                <a class="button button--card" href="https://despair08.github.io/pulse/" target="_blank">learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="card__wrapper">
+            <h4 class="card__label">
+              <span class="accent">Project</span> //In progress
+            </h4>
+            <div class="card">
+              <img class="card__img" src="../assets/images/projects/cards/temp.png" alt="project preview">
+              <div class="descr__container">
+                <ul class="card__descr">
+                  <li class="descr__list">In progress</li>
+                  <li class="descr__list"><a href="#" class="descr__link">GitHub</a></li>
+                </ul>
+                <a class="button button--card" href="#" target="_blank">learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre class="code__snipp code__snipp--bottom-r">
+          <code>
+            bindEvents(){
+            this.modalCloseBtn.addEventListener('click', this.closeModal);
+            this.overlay.addEventListener('click', this.closeModal);
+            }
+          </code>
+          </pre>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" target="_blank" href="https://rs.school/">
+              School: <img class="footer__img" src="../assets/images/icons/logo-rs.svg" alt="rs school logo">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" target="_blank" href="https://github.com/Despair08">
+              Git Hub: <img class="footer__img" src="../assets/images/icons/github-mark.svg" alt="my git">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" target="_blank" href="https://github.com/IgorDiasDeAndrade">
+              Design By: <img class="footer__img" src="../assets/images/icons/github-mark.svg" alt="git">
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="footer__copy">2023</p>
+    </footer>
+  </div>
+</body>
+
+</html>

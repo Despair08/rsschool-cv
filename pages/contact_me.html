@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <title>CV by vodanila</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h3 class="header__title">
+        &lt;vodanila /&gt;
+      </h3>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="../index.html">_Hello</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="./projects.html">_projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="./about_me.html">_about-me</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="#">_contact-me</a>
+          </li>
+
+        </ul>
+      </nav>
+    </header>
+    <main class="contact__main">
+      <div class="photo__container">
+        <picture>
+          <source srcset="../assets/images/photo.webp" type="image/webp">
+          <img class="photo" src="../assets/images/photo.jpg" alt="photo" />
+        </picture>
+      </div>
+      <section class="content__container content__contact">
+        <div class="contacts">
+          <p class="contacts__me">
+            <span class="contacts__accent">.ContactMe</span> {<br>
+            <span class="contacts__contact"> email:</span> <a class="contacts__link"
+              href="mailto:vodanila2008@ya.ru">vodanila2008@ya.ru</a><br>
+            <span class="contacts__contact"> telegram:</span> <a class="tg__link"
+              href="https://t.me/Des_pair">Desp_air</a><br>
+            }
+          </p>
+          <p class="social">
+            <span class="contacts__accent">.SocialMedia</span> {<br>
+            <span class="social__accent"> gitHub:</span> <a class="contacts__link"
+              href="https://github.com/Despair08">https://github.com/Despair08</a><br>
+            <span class="social__accent"> VK:</span> <a class="contacts__link"
+              href="https://vk.com/desp_air2">https://vk.com/desp_air2</a><br>
+            }
+          </p>
+        </div>
+        <div class="thanks">
+          <h3 class="thanks__header">Thank You!</h3>
+          <p class="thanks__descr">Programming my tech career like I always wanted.</p>
+        </div>
+        <pre class="code__snipp code__snipp--bottom">
+                  <code>
+                    import { Modal } from "./modal.js";
+
+                    export const renderModalWindow = (content) => {
+                    let modal = new Modal ('tools-modal');
+                    modal.buildModal(content);
+                    }
+                  </code>
+                  </pre>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" target="_blank" href="https://rs.school/">
+              School: <img class="footer__img" src="../assets/images/icons/logo-rs.svg" alt="rs school logo">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" target="_blank" href="https://github.com/Despair08">
+              Git Hub: <img class="footer__img" src="../assets/images/icons/github-mark.svg" alt="my git">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" target="_blank" href="https://github.com/IgorDiasDeAndrade">
+              Design By: <img class="footer__img" src="../assets/images/icons/github-mark.svg" alt="git">
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="footer__copy">2023</p>
+    </footer>
+  </div>
+</body>
+
+</html>
