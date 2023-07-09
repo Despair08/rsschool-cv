@@ -2,14 +2,63 @@
   &__main {
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background: url("./assets/images/projects/bg/tubo.png") no-repeat 0% 100%,
-      url("./assets/images/projects/bg/land.png") no-repeat 60% 5%;
+    align-items: center;
+    flex-direction: column;
+    background: url("./assets/images/contact/tubo.png") no-repeat 0% 80%,
+      url("./assets/images/contact/land.png") no-repeat 60% 5%;
   }
 }
-.content {
+
+.content__contact {
+  display: flex;
+  padding: 110px 50px;
+}
+
+.contacts {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+
+  &__me {
+    width: 270px;
+  }
+
+  &__accent {
+    color: $accent;
+  }
+
   &__contact {
+    color: $secondary-acc;
+  }
+
+  &__link {
+    color: $accent-skin;
+  }
+}
+.tg {
+  &__link {
+  }
+}
+.social {
+  &__accent {
+    color: $secondary-acc;
+  }
+}
+
+.thanks {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  border-left: 1px solid $accent-mix;
+  &__header {
+  }
+  &__descr {
   }
 }
