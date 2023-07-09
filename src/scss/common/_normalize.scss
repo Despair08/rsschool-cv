@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @include font();
+  color: $secondary-light;
+  background-color: $primary;
+}
+
+h1 {
+  @include font(62px, 400, normal, left);
+}
+
+h2 {
+  @include font(32px, 400, normal, left);
+}
+
+h3 {
+  @include font(24px, 400, normal, left);
+}
+
+h4 {
+  @include font(16px, 400, normal, left);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

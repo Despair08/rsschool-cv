@@ -1,0 +1,8 @@
+.projects__main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("./assets/images/projects/bg/tubo.png") no-repeat 0% 100%,
+    url("./assets/images/projects/bg/land.png") no-repeat 60% 5%;
+}

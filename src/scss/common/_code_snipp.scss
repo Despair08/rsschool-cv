@@ -1,0 +1,27 @@
+.code__snipp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+  @include font(14px, 400, normal, left);
+  background-color: $primary-bg--op;
+  border: 1px solid $accent-mix;
+  color: $secondary-semi;
+  user-select: none;
+  &--bottom {
+    position: absolute;
+    top: 75%;
+    right: -5%;
+  }
+  &--top {
+    position: absolute;
+    top: -90px;
+    left: -100px;
+  }
+  &--bottom-r {
+    position: absolute;
+    top: 90%;
+    right: -10%;
+  }
+}

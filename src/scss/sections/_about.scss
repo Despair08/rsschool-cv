@@ -1,0 +1,71 @@
+.about {
+  &__main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("./assets/images/projects/bg/tubo.png") no-repeat 0% 100%,
+      url("./assets/images/projects/bg/land.png") no-repeat 60% 5%;
+  }
+
+  &__list {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+  }
+
+  &__list > span {
+    text-align: right;
+  }
+
+  &__item {
+    @include font(24px, 400, normal, left);
+    color: $secondary;
+    &--hidden {
+      user-select: none;
+      color: $primary-bg--op;
+    }
+  }
+}
+
+.content__about {
+  position: relative;
+}
+
+.numbers {
+  &__list {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+  }
+}
+.numb {
+  &__item {
+    @include font(24px, 400, normal, right);
+    color: $secondary;
+  }
+}
+
+.link {
+  color: $accent-skin;
+}
+.var {
+  color: $secondary-acc;
+}
+
+.photo__container {
+  margin: 0 0 5px 100px;
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  align-self: self-start;
+}
+.photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
